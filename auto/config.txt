@@ -1,0 +1,8 @@
+#Username ghi dau tien, sau do la password
+#Username cho may host
+usernamehost
+passhost
+#Username cho may raspi, bao gom ca ip cua raspi
+piuser
+passpi
+192.168.1.2
