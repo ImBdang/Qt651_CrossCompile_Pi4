@@ -77,7 +77,7 @@ cd gcc-10.3.0
 contrib/download_prerequisites
 ```
 
-Ghi chú các câu lệnh bên trên (không cần click tải tay)
+Ghi chú các câu lệnh bên trên (không cần tải, read only)
 
 Tải binutils: bao gồm các tool như as (assembler), ld (linker), ar (archive tool)… Đây là các công cụ cơ bản cần cho quá trình biên dịch.
 >wget https://ftpmirror.gnu.org/binutils/binutils-2.35.2.tar.bz2
