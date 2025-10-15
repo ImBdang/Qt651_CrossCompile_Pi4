@@ -5,7 +5,7 @@ Phiên bản PiOS mình dùng là 2023-05-03-raspios-bullseye-arm64.img
 Phiên bản Ubuntu mình dùng là 22.04.5 LTS
 
 
-Link drive lưu 1 vài file thư viện mình sử dụng trong quá trình build, đề phòng sau này có phiên bản mới không tương thích
+Link drive lưu 1 vài file mình sử dụng trong quá trình build, đề phòng sau này có phiên bản mới không tương thích
 
 https://drive.google.com/drive/folders/1INfJcckDI_olr4NDbNYfu6JdJKIJMWz6?usp=sharing
 
