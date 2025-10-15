@@ -83,16 +83,20 @@ Tải binutils: bao gồm các tool như as (assembler), ld (linker), ar (archiv
 >wget https://ftpmirror.gnu.org/binutils/binutils-2.35.2.tar.bz2
 
 
+
 Tải glibc: thư viện chuẩn C. Đây là thư viện runtime mà mọi chương trình C/C++ cần để chạy trên target.
 >wget https://ftpmirror.gnu.org/glibc/glibc-2.31.tar.bz2
+
 
 
 Tải GCC: bộ biên dịch chính, sẽ dùng để biên dịch các chương trình C/C++ cho Raspberry Pi.
 >wget https://ftpmirror.gnu.org/gcc/gcc-10.3.0/gcc-10.3.0.tar.gz
 
 
+
 Clone source kernel của Raspberry Pi.
 Source kernel sẽ cung cấp kernel headers (các file .h) cho glibc và GCC build.
+GCC cần kernel headers để biết các interface của kernel (ví dụ các syscall, cấu trúc dữ liệu trong kernel) khi build glibc và các chương trình system-level.
 >git clone --depth=1 https://github.com/raspberrypi/linux
 
 
@@ -105,7 +109,6 @@ sudo chown $USER /opt/cross-pi-gcc
 export PATH=/opt/cross-pi-gcc/bin:$PATH
 ```
 
-GCC cần kernel headers để biết các interface của kernel (ví dụ các syscall, cấu trúc dữ liệu trong kernel) khi build glibc và các chương trình system-level.
 
 Sau bước này, thư mục /opt/cross-pi-gcc/aarch64-linux-gnu/include sẽ có đầy đủ header của kernel.
 
